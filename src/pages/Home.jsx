@@ -1,21 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import panda from "../assets/panda-home.png";
 
 function Home() {
   return (
     <div className="bg-[#f1f5f9] min-h-screen flex flex-col dark:bg-[#062239]">
       <Header />
 
-      <div className="h-40" />
-
-      <main className="pb-12 px-6 md:px-8 lg:px-16 w-full mx-auto flex flex-row items-center gap-12 max-w-[1200px]">
-        <div className="flex-1">
+      <main className="pt-20 md:pt-24 pb-12 px-6 md:px-8 lg:px-16 w-full mx-auto flex flex-col md:flex-row items-center gap-12 max-w-[1200px]">
+        <div className="flex-1 text-center md:text-left">
           <h1 className="text-[clamp(2rem,5vw,3rem)] font-poppins text-gray-800 leading-tight dark:text-white">
             Tecnologia com <br /> empatia: <span className="text-blue-500">Kaima</span>,<br />
             o robô que <br /> entende e ajuda <br /> a aprender
           </h1>
-          <p className="text-gray-500 mt-4 mb-6 text-sm max-w-md dark:text-white">
+          <p className="text-gray-500 mt-4 mb-6 text-sm max-w-md mx-auto md:mx-0 dark:text-white">
             Um assistente interativo para apoiar o desenvolvimento de crianças com dificuldades de aprendizagem.
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-full shadow-md transition duration-300 dark:text-white">
@@ -24,12 +23,11 @@ function Home() {
         </div>
 
         <img
-          src="../src/assets/panda-home.png"
+          src={panda}
           alt="Kaima o Panda"
-          className="w-[500px] max-w-none"
+          className="w-[70%] sm:w-[350px] md:w-[500px] mt-6 md:mt-0 mx-auto md:mx-0 max-w-full"
         />
-    </main>
-
+      </main>
 
       <section className="mt-16 px-6 md:px-8 lg:px-16 py-16 w-full mx-auto flex flex-col lg:flex-row items-start gap-12 max-w-[1200px]">
         <div className="max-w-xl">

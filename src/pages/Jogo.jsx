@@ -8,14 +8,14 @@ function Jogo() {
     <div className="min-h-screen bg-[#f1f5f9] flex flex-col dark:bg-[#062239]">
       <Header />
 
-      <main className="flex flex-col flex-grow items-center justify-center px-6 py-12">
+      <main className="flex flex-col flex-grow items-center justify-center px-6 pt-32 md:pt-40 pb-12">
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
-          <div className="flex-1">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 dark:text-white">
-              PANDA AVENTURA
-            </h1>
+          <div className="flex-1 text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white whitespace-nowrap">
+            PANDA <span className="text-blue-600">AVENTURA</span>
+          </h1>
 
-            <p className="text-gray-700 leading-relaxed mb-8 dark:text-white">
+            <p className="text-gray-700 leading-relaxed mb-8 dark:text-white text-sm md:text-base">
               Cada personagem ajuda a criança a superar desafios e atividades
               educativas dentro de sua área de especialidade. <br />
               No final de cada missão, o robô oferece feedback positivo e cria
@@ -27,7 +27,7 @@ function Jogo() {
               <span className="text-gray-600">[ espaço para o vídeo ]</span>
             </div>
 
-            <button className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition flex items-center gap-2">
+            <button className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition flex items-center gap-2 mx-auto md:mx-0">
               Ir para o Gdevelop <span className="text-xl">»</span>
             </button>
           </div>
@@ -36,7 +36,7 @@ function Jogo() {
             <img
               src={pandaImg}
               alt="Panda aventura"
-              className="w-80 md:w-[800px]"
+              className="w-60 md:w-80 lg:w-[800px] object-contain"
             />
           </div>
         </div>
