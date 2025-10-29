@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import pandaImg from "../assets/panda-home.png";
@@ -11,9 +10,9 @@ function Jogo() {
       <main className="flex flex-col flex-grow items-center justify-center px-6 pt-32 md:pt-40 pb-12">
         <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="flex-1 text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white whitespace-nowrap">
-            PANDA <span className="text-blue-600">AVENTURA</span>
-          </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 dark:text-white whitespace-nowrap">
+              PANDA <span className="text-blue-600">AVENTURA</span>
+            </h1>
 
             <p className="text-gray-700 leading-relaxed mb-8 dark:text-white text-sm md:text-base">
               Cada personagem ajuda a criança a superar desafios e atividades
@@ -23,8 +22,16 @@ function Jogo() {
               aprendizado de um problema como a falta de conhecimento.
             </p>
 
-            <div className="w-full max-w-md h-48 bg-[#cfdcf6] rounded-2xl flex items-center justify-center shadow-md mb-6 dark:bg-[#0E2D48]">
-              <span className="text-gray-600">[ espaço para o vídeo ]</span>
+            <div className="w-full max-w-md h-48 rounded-2xl overflow-hidden shadow-md mb-6">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" // vídeo aleatório
+                title="Vídeo do Panda Aventura"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
             <button className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition flex items-center gap-2 mx-auto md:mx-0">

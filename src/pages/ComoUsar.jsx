@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
