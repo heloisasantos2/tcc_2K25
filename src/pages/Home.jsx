@@ -7,7 +7,8 @@ function Home() {
     <div className="bg-[#f1f5f9] min-h-screen flex flex-col dark:bg-[#062239]">
       <Header />
 
-      <main className="pt-20 md:pt-24 pb-12 px-4 md:px-8 w-full flex flex-col md:flex-row items-center justify-between gap-12">
+      {/* AQUI: diminui o gap */}
+      <main className="pt-20 md:pt-24 pb-12 px-4 md:px-6 w-full flex flex-col md:flex-row items-center justify-between gap-4">
 
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-[clamp(2rem,5vw,3rem)] font-poppins text-gray-800 leading-tight dark:text-white">
@@ -25,16 +26,19 @@ function Home() {
         </div>
 
         <div className="flex-1 flex justify-center md:justify-end">
-          <div className="relative flex items-center justify-center">
-            <div className="absolute inset-0 rounded-full blur-[80px] bg-blue-600 opacity-30 scale-[1.2]" />
+          
+          {/* AQUI: leve aproximação da imagem -> puxamos um pouco para a esquerda */}
+          <div className="relative flex items-center justify-center md:-ml-6">
+            <div className="absolute inset-0 rounded-full blur-[80px] bg-blue-600 opacity-30 scale-[1.25]" />
           
             <img
               src={panda}
               alt="Kaima o Panda"
               className="relative z-10 
-                w-[60vw] max-w-[500px] md:max-w-[550px] object-contain"
+                w-[65vw] max-w-[530px] md:max-w-[600px] object-contain"
             />
           </div>
+
         </div>
 
       </main>

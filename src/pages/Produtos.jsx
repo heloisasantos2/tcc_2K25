@@ -1,24 +1,25 @@
 import Header from '../components/Header';
-
-import lcdImg from '../assets/lcd.png';
-import arduinoImg from '../assets/arduinouno.png';
-import vozImg from '../assets/voz.png';
-import servoImg from '../assets/servo.png';
+import espImg from '../assets/ESP32.png';
+import somImg from '../assets/sensor-ky.png';
+import dfImg from '../assets/dfplayer.png';
 import jumpersImg from '../assets/jumpers.png';
 import fonteImg from '../assets/fonte-alimentacao.png';
 import filamentoImg from '../assets/filamento.png';
 import pandaImg from '../assets/panda-home.png';
+import telaTouch from '../assets/tela-touch.png';
+import AltoImg from '../assets/altofalante.png'; 
 import Footer from '../components/Footer';
 
 function Produtos() {
   const produtos = [
-    { nome: 'LCD 16x2 com interface I2C', imagem: lcdImg, preco: 35 },
-    { nome: 'Arduino Uno R3', imagem: arduinoImg, preco: 80 },
-    { nome: 'Módulo de Reconhecimento de Voz', imagem: vozImg, preco: 120 },
-    { nome: 'Servo SG90', imagem: servoImg, preco: 25 },
+    { nome: 'Tela Touch Screen', imagem: telaTouch, preco: 386 },
+    { nome: 'ESP32', imagem: espImg, preco: 62 },
+    { nome: 'Sensor de Som KY-028 ', imagem: somImg, preco: 120 },
+    { nome: 'DfPlayer', imagem: dfImg, preco: 25 },
     { nome: 'Jumpers', imagem: jumpersImg, preco: 15 },
     { nome: 'Fonte de alimentação 5V', imagem: fonteImg, preco: 25 },
     { nome: 'Filamento PLA para impressora 3D', imagem: filamentoImg, preco: 120 },
+    { nome: 'Alto-falante', imagem: AltoImg, preco: 15 },
   ];
 
   const valorTotal = produtos.reduce((acc, produto) => acc + produto.preco, 0);
